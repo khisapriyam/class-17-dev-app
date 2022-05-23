@@ -1,35 +1,19 @@
-const student = [
-    { 
-        roll        : 1,
-        name        : 'John',
-        age         : 21,
-        location    : 'Mirpur',
-        gender      : 'Male'
-    },
-    { 
-        roll        : 2,
-        name        : 'Abraham',
-        age         : 22,
-        location    : 'Uttara',
-        gender      : 'Male'
-    },
-    { 
-        roll        : 3,
-        name        : 'Rahim',
-        age         : 9,
-        location    : 'Mirpur',
-        gender      : 'Male'
-    },
-    { 
-        roll        : 4,
-        name        : 'Bipasha',
-        age         : 12,
-        location    : 'Banani',
-        gender      : 'Female'
-    }
-]
+let res = new Result();
 
-for(data in student){
-    console.log(student[data])
 
-}
+student.map((data, index) => {
+    console.log(`
+        ID      : ${data.id}
+        Name    : ${data.name}
+        Age     : ${data.age}
+        Gender  : ${data.gender}
+        Location: ${data.location}
+
+        Subject     Marks           GPA                             Grade   
+        Bangla      ${data.bn}      ${res.result(data.bn).gpaCal}   ${res.result(data.bn).gradeCal}
+        English     ${data.en}      ${res.result(data.en).gpaCal}   ${res.result(data.en).gradeCal}
+        Math        ${data.Math}    ${res.result(data.Math).gpaCal} ${res.result(data.Math).gradeCal}
+        --------------------------------------------------------------------------------------
+        Final Grade =${res.finalResult(data.bn,data.en,data.Math).finalCgpa} Final Result = ${res.finalResult(data.bn,data.en,data.Math).finalResult} 
+    `)
+})
