@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MERN Stack</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
+    <div class="container my-5">
+        <button id="start" class="btn btn-success">Start</button>
+        <button id="stop" class="btn btn-danger">Stop</button>
+        <button id="reset" class="btn btn-danger">Reset</button>
+        <hr>
+        <input id="count" type="text">
+        <hr>
+        <div style = "border:red 1px solid; border-radius:100px"class="load">
+            <div class="loader"></div>
+        </div>
+        <h1 style = "font-size: 100px; font-weight: 900"id="output">0</h1>
+        
+    </div>
 
-
-    
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./function.js"></script>
     <script src="./data.js"></script>
     <script src="./result.js"></script>
     <script src="./app.js"></script>

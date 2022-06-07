@@ -1,44 +1,31 @@
-const student = [
+const devs = [
     {
         id      : 1,
-        roll    : 1,
         name    : "ash",
         age     : 12,
         location: "Mirpur",
-        gender  : "male",
-        bn      : 67,
-        en      : 90,
-        Math    : 78,
-        s       : 87,
-        ss      : 23,
-        rel     :80
+        skills : "MERN",
+        photo   :"https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/passport/1-change.jpg"
+        
     },
     {
         id      : 2,
-        roll    : 2,
-        name    : "shaon",
-        age     : 30,
-        location: "Mirpur",
-        gender  : "male",
-        bn      : 67,
-        en      : 40,
-        Math    : 78,
-        s       : 87,
-        ss      : 90,
-        rel     : 80
+        name    : "robiul",
+        age     : 17,
+        location: "uttara",
+        skills : "PHP",
+        photo   :"https://i.pinimg.com/originals/7e/cf/43/7ecf4340b8aa2087ea351fc809cbd4bb.jpg"
+        
     },
     {
         id      : 3,
-        roll    : 3,
-        name    : "Robiul",
-        age     : 8,
-        location: "Uttara",
-        gender  : "male",
-        bn      : 67,
-        en      : 90,
-        Math    : 8,
-        s       : 87,
-        ss      : 60,
-        rel     : 70
+        name    : "khan",
+        age     : 112,
+        location: "bananir",
+        skills : "Java",
+        photo   :"https://i.pinimg.com/originals/6b/7e/d6/6b7ed698713c09ad9e6afc7dcb996a09.jpg"
+        
     }
+    
+       
 ]

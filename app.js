@@ -1,19 +1,44 @@
-let res = new Result();
+const start = document.getElementById('start');
+const h1 = document.getElementById('output');
+const stop = document.getElementById('stop');
+const count = document.getElementById('count');
+const loaders = document.querySelector('.loader');
 
 
-student.map((data, index) => {
-    console.log(`
-        ID      : ${data.id}
-        Name    : ${data.name}
-        Age     : ${data.age}
-        Gender  : ${data.gender}
-        Location: ${data.location}
 
-        Subject     Marks           GPA                             Grade   
-        Bangla      ${data.bn}      ${res.result(data.bn).gpaCal}   ${res.result(data.bn).gradeCal}
-        English     ${data.en}      ${res.result(data.en).gpaCal}   ${res.result(data.en).gradeCal}
-        Math        ${data.Math}    ${res.result(data.Math).gpaCal} ${res.result(data.Math).gradeCal}
-        --------------------------------------------------------------------------------------
-        Final Grade =${res.finalResult(data.bn,data.en,data.Math).finalCgpa} Final Result = ${res.finalResult(data.bn,data.en,data.Math).finalResult} 
-    `)
+let counter_value;
+let counter;
+
+
+start.addEventListener('click', () => {
+    counter_value = count.value;
+    
+    
+    counter = setInterval(() => {
+        h1.innerHTML = counter_value;
+
+        let width = loader(count.value,counter_value);
+        
+        loaders.style.width = `${width}%`;
+
+        //changing colors based on percentage
+        if(width >50 && width <=100){
+            loaders.style.backgroundColor = 'green';
+
+        }else if(width >30 && width <=50){
+            loaders.style.backgroundColor = 'orange';
+        }
+        else{
+            loaders.style.backgroundColor = 'red';
+        }
+
+        if(counter_value == 0){
+            clearInterval(counter);
+        }
+        counter_value--;
+
+    },1000);
 })
+
+
+
