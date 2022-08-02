@@ -38,11 +38,11 @@ function allDevs(){
     
     let data = '';
 
-    all_devs.map(d => {
+    all_devs.forEach(d => {
 
         let lists = '';
 
-        d.skill.map(list => {
+        d.skill.forEach(list => {
             lists += '<li class="list-group-item">' +list+ '</li>'
         })
 
