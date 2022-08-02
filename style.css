@@ -1,59 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
  
-/* custom properties is declared using :root*/
-/* :root{
-    --shadow-1: 0 .125rem .25rem rgba(0, 0, 0, .075);
-    --shadow-2: 0 .5rem 1rem rgba(0, 0, 0, .15);
-    --shadow-3: 0 1rem 3rem rgba(0, 0, 0, .175);
-}
- 
+
 *{
     margin: 0;
     padding: 0;
 }
- 
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
-html{
-    font-family: poppins;
-}
- 
+
 body{
-    background-color: #e9e9e9;
-}
-a,
-a:hover{
-    text-decoration: none;
-}
- 
-li{
-    list-style: none;
-}
-  */
-
-
-.science-box,
-.arts-box,
-.comm-box{
-    display : none;
+    background-color:#e9e9e9;
 }
 
-.student-result-data img{
-    width: 200px;
-    height: auto;
-    border: 10px solid #fff;
-    
-    /* photo majkhane antesi */
-    display: block;
-    margin: auto;
-}
-.student-result-data h2{
-    font-weight: 900;
+/* h2{
     text-align: center;
-    font-size: 22px;
-    margin-top: 20px;
-}
+} */
 
+#product-add-box{
+    display: none;
+}

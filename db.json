@@ -1,31 +1,22 @@
 {
-    "student": [
+    "Students": [
         {
-            "id":10,
-            "name": "John",
-            "age":16
+            "name": "pk",
+            "age": 22
         },
         {
-            "id":10,
-            "name": "John",
-            "age":16
+            "name": "ck",
+            "age": 21
         }
     ],
-    "food": [
+    "teachers" : [
         {
-            "id": 21,
-            "name": "John",
-            "age":20
+            "name": "kamrul",
+            "sex" : "male"
         },
         {
-            "id": 21,
-            "name": "John",
-            "age":20
-        }
-    ],
-    "location": [
-        {
-            
+            "name": "vimrul",
+            "sex" : "female"
         }
     ]
 }

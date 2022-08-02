@@ -75,9 +75,9 @@ function Result(){
         }
     
         return {
-            finalCgpa : (finalGrade == "F") ? "Failed": cgpa.toFixed(2),
+            //finalCgpa : (finalGrade == "F") ? "Failed": cgpa.toFixed(2),
             //finalCgpa : (cgpa == 0.00) ? " ": cgpa.toFixed(2), //use this line if you want to see blank in CGPA
-            //finalCgpa : cgpa.toFixed(2),//use this line if you want to show 0.00 in CGPA
+            finalCgpa : cgpa.toFixed(2),//use this line if you want to show 0.00 in CGPA
             finalResult: finalGrade
         }
     }
