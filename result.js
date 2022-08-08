@@ -41,15 +41,23 @@ function Result(){
             gradeCal: grade
         }
     }
-    this.finalResult= function(bn, en, Math,sci,ss,ped){
+    this.finalResult= function(bn, en, Math,sci,ss){
         let cgpa;
         let finalGrade;
 
-        let totalGpa = this.result(bn).gpaCal + this.result(en).gpaCal + this.result(Math).gpaCal + this.result(sci).gpaCal + this.result(ss).gpaCal + this.result(ped).gpaCal;
-        cgpa = totalGpa / 6;
+        let totalGpa = 
+        this.result(bn).gpaCal + 
+        this.result(en).gpaCal + 
+        this.result(Math).gpaCal + 
+        this.result(sci).gpaCal + 
+        this.result(ss).gpaCal  
+        // this.result(rel).gpaCal;
+
+        cgpa = totalGpa / 5;
 
         if(bn < 33 || en < 33 || Math < 33 ){
             //cgpa = 0;//also add this line for case-2 and 3
+            cgpa = 0
             finalGrade = "F"
         }
         else if(cgpa >=0 && cgpa <1){
@@ -75,10 +83,10 @@ function Result(){
         }
     
         return {
-            //finalCgpa : (finalGrade == "F") ? "Failed": cgpa.toFixed(2),
+            // finalCgpa : (finalGrade == "F") ? "Failed": cgpa.toFixed(2),
             //finalCgpa : (cgpa == 0.00) ? " ": cgpa.toFixed(2), //use this line if you want to see blank in CGPA
             finalCgpa : cgpa.toFixed(2),//use this line if you want to show 0.00 in CGPA
-            finalResult: finalGrade
+            finalResults: finalGrade
         }
     }
 }
